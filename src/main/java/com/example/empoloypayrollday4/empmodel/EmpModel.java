@@ -1,11 +1,15 @@
 package com.example.empoloypayrollday4.empmodel;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.Date;
 
 @Entity
 public class EmpModel {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer Id;
     public String firstName;
     public String lastName;
@@ -13,17 +17,18 @@ public class EmpModel {
     public Integer salary;
     public String profilePic;
     public String note;
+    public Date date;
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
 
     public EmpModel() {
 
-    }
-
-    public Integer getId() {
-        return Id;
-    }
-
-    public void setId(Integer id) {
-        Id = id;
     }
 
     public String getFirstName() {
@@ -74,13 +79,13 @@ public class EmpModel {
         this.note = note;
     }
 
-    public EmpModel(Integer id, String firstName, String lastName, String address, Integer salary, String profilePic, String note) {
-        Id = id;
+    public EmpModel(String firstName, String lastName, String address, Integer salary, String profilePic, String note, Date date){
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
         this.salary = salary;
         this.profilePic = profilePic;
         this.note = note;
+        this.date = date;
     }
 }
