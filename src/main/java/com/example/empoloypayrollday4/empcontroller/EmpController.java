@@ -1,5 +1,7 @@
 package com.example.empoloypayrollday4.empcontroller;
 
+import com.example.empoloypayrollday4.dto.EmpDto;
+import com.example.empoloypayrollday4.dto.EmpResponseDto;
 import com.example.empoloypayrollday4.empmodel.EmpModel;
 import com.example.empoloypayrollday4.empservices.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,10 +43,21 @@ public class EmpController {
         return empService.editById(id, empModel);
     }
 
-    @DeleteMapping("delete")
+    @DeleteMapping("/delete")
     public String deleteid(@RequestParam Integer id){
          empService.deleteById(id);
          return "delete id successfully";
     }
+
+    @PostMapping("/postbydto")
+    public ResponseEntity<EmpResponseDto> postByDto(@RequestBody EmpDto empDto){
+        EmpModel empModel = null;
+        Integer id = counter.getAndIncrement();
+        empModel = new EmpModel(id, empDto);
+        EmpResponseDto empResponseDto = new EmpResponseDto(id, empModel, "posted employeepayroll data");
+        return new ResponseEntity<>(empResponseDto, HttpStatus.OK);
+    }
+
+
 
 }
