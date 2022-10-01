@@ -1,0 +1,10 @@
+2022-10-01 10:58:12.661 [INFO] [restartedMain] [c.e.e.Empoloypayrollday4Application:55] Starting Empoloypayrollday4Application using Java 18.0.2.1 on ASUS-Animesh with PID 2220 (C:\Users\anime\IdeaProjects\Empoloypayrollday4\target\classes started by anime in C:\Users\anime\IdeaProjects\Empoloypayrollday4)
+2022-10-01 10:58:12.661 [DEBUG] [restartedMain] [c.e.e.Empoloypayrollday4Application:56] Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-01 10:58:12.661 [INFO] [restartedMain] [c.e.e.Empoloypayrollday4Application:640] The following 1 profile is active: "dev"
+2022-10-01 10:58:18.954 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-01 10:58:19.676 [INFO] [restartedMain] [c.e.e.Empoloypayrollday4Application:61] Started Empoloypayrollday4Application in 7.847 seconds (JVM running for 9.657)
+2022-10-01 11:03:19.528 [INFO] [restartedMain] [c.e.e.Empoloypayrollday4Application:55] Starting Empoloypayrollday4Application using Java 18.0.2.1 on ASUS-Animesh with PID 16872 (C:\Users\anime\IdeaProjects\Empoloypayrollday4\target\classes started by anime in C:\Users\anime\IdeaProjects\Empoloypayrollday4)
+2022-10-01 11:03:19.538 [DEBUG] [restartedMain] [c.e.e.Empoloypayrollday4Application:56] Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-01 11:03:19.538 [INFO] [restartedMain] [c.e.e.Empoloypayrollday4Application:640] The following 1 profile is active: "dev"
+2022-10-01 11:03:26.198 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-01 11:03:26.988 [INFO] [restartedMain] [c.e.e.Empoloypayrollday4Application:61] Started Empoloypayrollday4Application in 8.396 seconds (JVM running for 10.388)
