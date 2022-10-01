@@ -3,7 +3,6 @@ package com.example.empoloypayrollday4.dto;
 public class EmpResponseDto {
 public Object data;
 public String message;
-public Integer empId;
 
     public Object getData() {
         return data;
@@ -21,8 +20,7 @@ public Integer empId;
         this.message = message;
     }
 
-    public EmpResponseDto(Integer id, Object data, String message) {
-        this.empId = id;
+    public EmpResponseDto(Object data, String message) {
         this.data = data;
         this.message = message;
     }

@@ -20,7 +20,6 @@ public class EmpModel {
     public String profilePic;
     public String note;
     public Date date;
-    public Integer empId;
 
     public Date getDate() {
         return date;
@@ -91,8 +90,7 @@ public class EmpModel {
         this.note = note;
         this.date = date;
     }
-    public EmpModel(Integer id, EmpDto empDto){
-        this.empId =  id;
+    public EmpModel(EmpDto empDto){
         this.firstName = empDto.firstName;
         this.lastName = empDto.lastName;
         this.address = empDto.address;
