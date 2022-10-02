@@ -15,12 +15,12 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 @RestController
 public class EmpController {
-    private final AtomicInteger counter = new AtomicInteger();
+
    //uc1
-    @GetMapping("/getbymodel")
-    public EmpModel getDetail(@RequestParam String name, String lastName, String address, Integer salary, String profile, String note, Date date){
-        return new EmpModel( name, lastName, address, salary, profile, note, date);
-    }
+//    @GetMapping("/getbymodel")
+//    public EmpModel getDetail(@RequestParam String name, String lastName, String address, Integer salary, String profile, String note, Date date){
+//        return new EmpModel( name, lastName, address, salary, profile, note, date);
+//    }
     //uc2
     @Autowired
     EmpService empService;
