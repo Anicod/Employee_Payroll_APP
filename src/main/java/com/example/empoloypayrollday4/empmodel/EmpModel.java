@@ -12,7 +12,7 @@ import javax.persistence.Id;
 import java.util.Date;
 
 @Entity
-@Data //data anotation uses no need to getter setter, no argument constructor and argument constructor
+@Data //data anotation uses no need to getter setter, no argument constructor and argument constructor 
 
 public class EmpModel {
     @Id
@@ -30,15 +30,15 @@ public class EmpModel {
 
     }
 
-    public EmpModel(String firstName, String lastName, String address, Integer salary, String profilePic, String note, Date date){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.salary = salary;
-        this.profilePic = profilePic;
-        this.note = note;
-        this.date = date;
-    }
+//    public EmpModel(String firstName, String lastName, String address, Integer salary, String profilePic, String note, Date date){
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//        this.address = address;
+//        this.salary = salary;
+//        this.profilePic = profilePic;
+//        this.note = note;
+//        this.date = date;
+//    }
     public EmpModel(EmpDto empDto){
         this.firstName = empDto.firstName;
         this.lastName = empDto.lastName;

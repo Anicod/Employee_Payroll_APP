@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Empoloypayrollday4Application {
 
     public static void main(String[] args) {
-        log.info("hello empolyee");
+        log.info("hello empolye");
         SpringApplication.run(Empoloypayrollday4Application.class, args);
     }
 
