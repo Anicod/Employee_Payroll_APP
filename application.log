@@ -8,4 +8,3 @@
 2022-10-02 11:16:11.084 [INFO] [restartedMain] [c.e.e.Empoloypayrollday4Application:640] The following 1 profile is active: "dev"
 2022-10-02 11:16:14.813 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-10-02 11:16:15.197 [INFO] [restartedMain] [c.e.e.Empoloypayrollday4Application:61] Started Empoloypayrollday4Application in 4.619 seconds (JVM running for 5.559)
-
