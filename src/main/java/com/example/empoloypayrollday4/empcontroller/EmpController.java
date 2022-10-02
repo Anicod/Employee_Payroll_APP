@@ -75,7 +75,7 @@ public class EmpController {
         EmpResponseDto empResponseDto = new EmpResponseDto(newEmpModel, "data updated successfully");
         return new ResponseEntity<>(empResponseDto, HttpStatus.OK);
     }
-    @DeleteMapping("/deletebyid")
+    @DeleteMapping("/deleteid")
     public String deleteId(@RequestParam Integer id){
         empService.deleteId(id);
         return "id deleted successfully";
