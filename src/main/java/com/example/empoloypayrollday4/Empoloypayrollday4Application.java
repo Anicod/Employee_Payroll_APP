@@ -12,5 +12,4 @@ public class Empoloypayrollday4Application {
         log.info("hello empolye");
         SpringApplication.run(Empoloypayrollday4Application.class, args);
     }
-
 }
