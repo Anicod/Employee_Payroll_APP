@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -50,7 +51,7 @@ public class EmpController {
 ////    }
 
     @PostMapping("/postbydto")
-    public ResponseEntity<EmpResponseDto> postByDto(@RequestBody EmpDto empDto){
+    public ResponseEntity<EmpResponseDto> postByDto(@Valid @RequestBody EmpDto empDto){
         EmpModel empModel = null;
         empModel = new EmpModel(empDto);
         EmpModel newempModel = empService.savePost(empModel);
@@ -75,7 +76,7 @@ public class EmpController {
         EmpResponseDto empResponseDto = new EmpResponseDto(newEmpModel, "data updated successfully");
         return new ResponseEntity<>(empResponseDto, HttpStatus.OK);
     }
-    @DeleteMapping("/deleteid")
+    @DeleteMapping("/deletebyid")
     public String deleteId(@RequestParam Integer id){
         empService.deleteId(id);
         return "id deleted successfully";
