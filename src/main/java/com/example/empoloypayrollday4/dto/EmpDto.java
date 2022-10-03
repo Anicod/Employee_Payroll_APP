@@ -29,8 +29,10 @@ public class EmpDto {
     public  String  note;
     @JsonFormat
     public Date date;
+    public String gender;
+    public String department;
 
-    public EmpDto(String firstName, String lastName, String address, Integer salary, String profilePic, String note, Date date) {
+    public EmpDto(String firstName, String lastName, String address, Integer salary, String profilePic, String note, Date date, String gender, String department) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -38,6 +40,8 @@ public class EmpDto {
         this.profilePic = profilePic;
         this.note = note;
         this.date = date;
+        this.gender = gender;
+        this.department = department;
     }
 
 
