@@ -25,6 +25,8 @@ public class EmpModel {
     public String profilePic;
     public String note;
     public Date date;
+    public String gender;
+    public String department;
 
     public EmpModel(){
 
@@ -47,5 +49,7 @@ public class EmpModel {
         this.profilePic = empDto.profilePic;
         this.note =  empDto.note;
         this.date = empDto.date;
+        this.gender = empDto.gender;
+        this.department = empDto.department;
     }
 }

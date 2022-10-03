@@ -74,6 +74,8 @@ public class EmpService implements IEmpService {
             empObj.setProfilePic(empModel.getProfilePic());
             empObj.setNote(empModel.getNote());
             empObj.setDate(empModel.getDate());
+            empObj.setGender(empModel.getGender());
+            empObj.setDepartment(empModel.getDepartment());
             return empRepository.save(empObj);
         }
         return null;
