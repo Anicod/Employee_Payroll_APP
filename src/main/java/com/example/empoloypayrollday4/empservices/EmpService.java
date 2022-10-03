@@ -3,6 +3,7 @@ package com.example.empoloypayrollday4.empservices;
 import com.example.empoloypayrollday4.dto.EmpDto;
 import com.example.empoloypayrollday4.dto.EmpResponseDto;
 import com.example.empoloypayrollday4.empmodel.EmpModel;
+import com.example.empoloypayrollday4.exception.EmpolyPayrollException;
 import com.example.empoloypayrollday4.repository.EmpRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -80,6 +81,11 @@ public class EmpService implements IEmpService {
 
     @Override
     public void deleteId(Integer id) {
-        empRepository.deleteById(id);
+        List<EmpModel> list = empRepository.findAll();
+        EmpModel newEmp = list.stream().filter(empModel -> empModel.getId() == id)
+                        .findFirst()
+                                .orElseThrow(() -> new EmpolyPayrollException("employee not found"));
+        empRepository.deleteById(newEmp.getId());
+
     }
 }
